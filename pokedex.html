@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <title>Pokédex</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font -->
+    <link href="https://fonts.cdnfonts.com/css/joystix" rel="stylesheet">
+    <!--  -->
+</head>
+
+<body id="pokebg">
+
+    <header>
+        <div class="header">
+            <div class="poke-info">
+                <h3 id="pokenum">#000</h3>
+                <h1 id="poketitle">Name</h1>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" width="140px" height="60px">
+                
+            </div>
+        </div>
+
+    </header>
+
+    <section class="main-container">
+
+        <div class="container">
+            <div class="main-info">
+                <h2>Height: <p id="pokeh">0.00m</p>
+                </h2>
+                <h2>Weight: <p id="pokew">0Kg</p></h2>
+            </div>
+    
+            <div class="main-image">
+                <img id="pokeImg" src="images/logo.png" alt="Pokemon Image">
+                <h1 id="poketxt">ポケモン図鑑</h1>
+            </div>
+    
+            <div class="main-abilities">
+                <h2>Abilities: <p id="abilities">Empty</p>
+                </h2>
+                <h2>Types: <p id="poketype">Empty</p>
+                </h2>
+            </div>
+    
+            <div class="buttons">
+                <button id="btnDown"><i class='bx bx-chevron-left'></i></button>
+                <h2 id="pokeindex">25</h2>
+                <button  id="btnUp"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+
+        <div class="search" >
+            <i class='bx bx-search'></i><input type="text" class="pokeName" name="pokeName" id="pokeName" placeholder="Insert Name or Number">
+        </div>
+        
+    </section>
+
+   
+
+    <script src="js/extra.js"></script>
+</body>
+
+</html>
