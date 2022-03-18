@@ -1,20 +1,20 @@
-# Sneaker Store Concept!
+# LaunchX: Pokédex
 
 
-## This project is a concept for a sneakers store
+## Pokédex hecha con Vanilla JS
 
 
-1. [Final Result](https://github.com/JhosianGtZ/Pokedex)
+1. [Resultado Final ](https://github.com/JhosianGtZ/Pokedex)
 
 2. [UI/UX](https://dribbble.com/shots/2859891--025-Pikachu)
 
-3. [Icons: Boxicons](https://boxicons.com/)
+3. [Iconos: Boxicons](https://boxicons.com/)
 
 4. [Font: Monsterrat](https://fonts.google.com/specimen/Montserrat)
 
 5. [Font: Days One](https://fonts.google.com/specimen/Days+One)
 
-# Made With
+# Hecho con:
 
 
 ![CSS](assets/img/css.svg) ![HTML](assets/img/html.svg) ![JS](assets/img/js.svg)
@@ -31,7 +31,7 @@ Mobile View
 
 
 
-# My Contact Links
+# Contact Links
 
 [![Instagram](https://raw.githubusercontent.com/JhosianGtZ/JhosianGtZ/main/icons8-instagram-100.png)](https://instagram.com/_jhosian)
 [![Linkedin](https://raw.githubusercontent.com/JhosianGtZ/JhosianGtZ/main/icons8-linkedin-100.png)](https://www.linkedin.com/in/jhosiangtz/)
