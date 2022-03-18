@@ -21,56 +21,60 @@
 </head>
 
 <body id="pokebg">
+    <div class="pokedex">
 
-    <header>
-        <div class="header">
-            <div class="poke-info">
-                <h3 id="pokenum">#000</h3>
-                <h1 id="poketitle">Name</h1>
-            </div>
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo" width="140px" height="60px">
-                
-            </div>
-        </div>
+        <header>
+            <div class="header">
+                <div class="poke-info">
+                    <h3 id="pokenum">#000</h3>
+                    <h1 id="poketitle">Name</h1>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" width="140px" height="60px">
 
-    </header>
-
-    <section class="main-container">
-
-        <div class="container">
-            <div class="main-info">
-                <h2>Height: <p id="pokeh">0.00m</p>
-                </h2>
-                <h2>Weight: <p id="pokew">0Kg</p></h2>
+                </div>
             </div>
-    
-            <div class="main-image">
-                <img id="pokeImg" src="images/logo.png" alt="Pokemon Image">
-                <h1 id="poketxt">ポケモン図鑑</h1>
-            </div>
-    
-            <div class="main-abilities">
-                <h2>Abilities: <p id="abilities">Empty</p>
-                </h2>
-                <h2>Types: <p id="poketype">Empty</p>
-                </h2>
-            </div>
-    
-            <div class="buttons">
-                <button id="btnDown"><i class='bx bx-chevron-left'></i></button>
-                <h2 id="pokeindex">25</h2>
-                <button  id="btnUp"><i class='bx bx-chevron-right'></i></button>
-            </div>
-        </div>
 
-        <div class="search" >
-            <i class='bx bx-search'></i><input type="text" class="pokeName" name="pokeName" id="pokeName" placeholder="Insert Name or Number">
-        </div>
-        
-    </section>
+        </header>
 
-   
+        <section class="main-container">
+
+            <div class="container">
+                <div class="main-info">
+                    <h2>Height: <p id="pokeh">0.00m</p>
+                    </h2>
+                    <h2>Weight: <p id="pokew">0Kg</p>
+                    </h2>
+                </div>
+
+                <div class="main-image">
+                    <img id="pokeImg" src="images/logo.png" alt="Pokemon Image">
+                    <h1 id="poketxt">ポケモン図鑑</h1>
+                </div>
+
+                <div class="main-abilities">
+                    <h2>Abilities: <p id="abilities">Empty</p>
+                    </h2>
+                    <h2>Types: <p id="poketype">Empty</p>
+                    </h2>
+                </div>
+
+                <div class="buttons">
+                    <button id="btnDown"><i class='bx bx-chevron-left'></i></button>
+                    <h2 id="pokeindex">0</h2>
+                    <button id="btnUp"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+
+            <div class="search">
+                <i class='bx bx-search'></i><input type="text" class="pokeName" name="pokeName" id="pokeName"
+                    placeholder="Insert Name or Number">
+            </div>
+
+        </section>
+    </div>
+
+
 
     <script src="js/extra.js"></script>
 </body>

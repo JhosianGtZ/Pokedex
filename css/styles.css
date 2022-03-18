@@ -4,12 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
-    
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background: rgba(222, 222, 222, 0.1); */
     color: rgb(3, 3, 3, 0.6);
+    
 }
 
 body {
@@ -20,6 +21,10 @@ body {
 
 p {
     font-weight: 500;
+}
+
+.pokedex {
+    height: 100vh;
 }
 
 .header {
@@ -87,7 +92,7 @@ p {
 .main-abilities h2 {
     padding: 1rem;
     width: 200px;
-    text-align: left;
+    text-align: right;
 }
 
 .main-image {
@@ -135,8 +140,8 @@ button {
     font-weight: 700;
     border: none;
     margin: 30px 0;
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     transform: rotate(90deg);
     cursor: pointer;
     background: transparent;
@@ -156,7 +161,10 @@ button:hover {
     justify-content: baseline;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
     transition: all .5s ease-in-out;
+}
 
+#pokeName{
+    position: fixed;
 }
 
 .search:hover {
@@ -262,7 +270,7 @@ button:hover {
     background: #D685AD;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-width: 1440px) {
 
 
     #pokenum {
@@ -276,7 +284,8 @@ button:hover {
     }
 
     .container {
-        margin-top: 4rem;
+        justify-content: space-around;
+        margin-top: 1rem;
     }
 
     .main-abilities h2,
@@ -286,13 +295,26 @@ button:hover {
         line-height: 3rem;
     }
 
+    .main-abilities {
+        width: 250px;
+    }
+
+    .main-abilities h2 {
+        width: 100%;
+        text-align: right;
+    }
+
     .main-abilities p {
         font-size: 1.5rem;
     }
 
+    .main-image {
+        width: 500px;
+        height: 250px;
+    }
 
     #poketxt {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     #pokeindex {
@@ -312,7 +334,7 @@ button:hover {
     }
 
     .search {
-        
+
         height: 50px;
     }
 
@@ -344,6 +366,41 @@ button:hover {
     }
 
 }
+
+@media screen and (max-width: 1105px) {
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .main-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        margin: 0 2rem;
+    }
+
+    #poketxt {
+        font-size: 70px;
+    }
+
+    .main-abilities {
+        width: 250px;
+    }
+
+    .main-abilities h2 {
+        padding: 1rem;
+        width: 200px;
+        text-align: right;
+    }
+
+    .main-abilities p {
+        font-size: 14px;
+    }
+}
+
+
 
 @media screen and (max-width: 900px) {
     .container {
@@ -409,8 +466,8 @@ button:hover {
 
 
 @media screen and (max-width: 600px) {
-    
-    .main-abilities h2:nth-child(2){
+
+    .main-abilities h2:nth-child(2) {
         text-align: right;
     }
 
@@ -429,31 +486,101 @@ button:hover {
     #poketxt {
         font-size: 80px;
     }
+
+    /* .search{
+        position: fixed;
+    } */
 }
 
 @media screen and (max-width: 500px) {
-    
-    .main-abilities h2, h2{
-        font-size: 16px;
+
+    .main-abilities h2 {
+
+        height: 100%;
     }
-    .main-image{
+
+    .main-abilities h2:nth-child(1) {
+        height: 100%;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .main-image {
         height: 200px;
     }
-    .main-abilities{
+
+    .main-abilities {
+        margin-top: 0;
         height: 160px;
     }
-    .poke-info{
+
+    .poke-info {
         width: 150px;
     }
-    #poketitle{
+
+    #poketitle {
         font-size: 18px;
     }
 
-    #poketxt{
+    #poketxt {
         font-size: 70px;
     }
 
+    .buttons {
+        margin-top: 5px;
+    }
+
+    button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        height: auto;
+    }
+
+    .logo image{
+        width: 100px;
+        height: 30px;
+    }
+    #poketitle {
+        font-size: 16px;
+    }
+
+    #poketxt {
+        font-size: 50px;
+    }
+
+    .main-info h2:nth-child(2) {
+        text-align: right;
+    }
+
+    .main-info{
+        height: 130px;
+    }
+    .main-info h2
+    {
+        height: auto;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
     .buttons{
-        margin-top: 10px;
+        height: 45px;
+    }
+
+    #pokeImg{
+        width: 150px;
+        height: 150px;
     }
 }
