@@ -4,7 +4,7 @@
 ## Pokédex hecha con Vanilla JS
 
 
-1. [Resultado Final ](https://github.com/JhosianGtZ/Pokedex)
+1. [Resultado Final ](https://jhosiangtz.github.io/Pokedex/)
 
 2. [UI/UX](https://dribbble.com/shots/2859891--025-Pikachu)
 
