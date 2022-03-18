@@ -12,47 +12,71 @@
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <title>Pokédex</title>
     <!-- Css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <!-- Boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Font -->
     <link href="https://fonts.cdnfonts.com/css/joystix" rel="stylesheet">
     <!--  -->
 </head>
+
 <body id="pokebg">
-    <div class="pokedex-container">
-        <div class="name-container">
-            <h3 id="poketitle">Name</h3>
-        </div>
-        <div  class="poke-image">
-            <div id="pokeImageContainer">
-                <img src="images/logo.png" alt="poke-image" id="pokeImg" width="300px" height="300px">
+    <div class="pokedex">
+
+        <header>
+            <div class="header">
+                <div class="poke-info">
+                    <h3 id="pokenum">#000</h3>
+                    <h1 id="poketitle">Name</h1>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" width="140px" height="60px">
+
+                </div>
             </div>
-            
-        </div>
 
-        <div id="typeContainer" class="type-container">
-            <h4 id="pokenum">Number: </h4>
-            <h4 id="poketype">Type</h4>
-        </div>
+        </header>
 
-        <div id="abilityContainer" class="abilityContainer">
-            <h4 id="abilities">abilities</h4>
-        </div>
+        <section class="main-container">
 
-        <div class="search-container">
-            <i class="bx bx-search"></i>
-            <input type="text" class="pokeName" name="pokeName" id="pokeName" placeholder="Insert Name or Number">
-            <button class="pokeSearch" id="btnSearch">Search</button>
-        </div>
+            <div class="container">
+                <div class="main-info">
+                    <h2>Height: <p id="pokeh">0.00m</p>
+                    </h2>
+                    <h2>Weight: <p id="pokew">0Kg</p>
+                    </h2>
+                </div>
 
-        <div class="buttons-container">
-            <button id="btnLeft" class="btn-left"><i class='bx bxs-left-arrow'></i></button>
-            <button id="btnRight" class="btn-right"><i class='bx bxs-right-arrow'></i></button>
-        </div>
+                <div id="imageContainer" class="main-image">
+                    <img id="pokeImg" src="images/logo.png" alt="Pokemon Image">
+                    <h1 id="poketxt"></h1>
+                </div>
+
+                <div class="main-abilities">
+                    <h2>Abilities: <p id="abilities">Empty</p>
+                    </h2>
+                    <h2>Types: <p id="poketype">Empty</p>
+                    </h2>
+                </div>
+
+                <div class="buttons">
+                    <button id="btnDown"><i class='bx bx-chevron-left'></i></button>
+                    <h2 id="pokeindex">0</h2>
+                    <button id="btnUp"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+
+            <div class="search">
+                <i class='bx bx-search'></i><input type="text" class="pokeName" name="pokeName" id="pokeName"
+                    placeholder="Insert Name or Number">
+            </div>
+
+        </section>
     </div>
 
-    <script src="js/main.js"></script>
+
+
+    <script src="js/extra.js"></script>
 </body>
 
 </html>

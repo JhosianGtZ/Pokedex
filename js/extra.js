@@ -1,5 +1,22 @@
 let indice = 0;
 
+const imageAnimation = document.getElementById("pokeImg");
+const txtAnimation = document.getElementById("poketxt");
+
+const animation = () => {
+
+
+    imageAnimation.classList.remove('slide-in');
+    txtAnimation.classList.remove('slide-in');
+
+    setTimeout(() => imageAnimation.classList.add('slide-in'), 150);
+
+
+    setTimeout(() => txtAnimation.classList.add('slide-in'), 150);
+
+}
+
+
 
 const fetchPokemon = () => {
 
@@ -41,7 +58,7 @@ const fetchPokemon = () => {
         // console.log(imgurl);
 
         indice = pokenum;
-        
+
         jpName();
 
     })
@@ -50,6 +67,8 @@ const fetchPokemon = () => {
 
 
 const changePokemon = () => {
+
+
 
 
     const url = `https://pokeapi.co/api/v2/pokemon/${indice}`
@@ -79,11 +98,13 @@ const changePokemon = () => {
         pokeImage(imgurl);
         pokeData(pokename, pokenum, pokeweight, pokeheight);
         pokeType(poketype, pokeabilities);
-        
-        
+
+        imageAnimation.className = "main-image slide-in";
 
     })
 }
+
+
 
 
 const namebG = (poketxt) => {
@@ -155,15 +176,18 @@ var searchInput = document.querySelector("#pokeName");
 
 btnUp.addEventListener("click", function onclick(event) {
     indice++;
-    // // console.log(indice)
+
+    animation();
     changePokemon();
     jpName();
+
+
 
 });
 
 btnDown.addEventListener("click", function onclick(event) {
     indice--;
-    // // console.log(indice)
+    animation();
     changePokemon();
     jpName();
 
@@ -175,6 +199,8 @@ window.pokeName.addEventListener('change', () => {
     // console.log(window.pokeName.value);
 
     fetchPokemon();
-    
-    
+    animation();
+    namePoke = document.getElementById("pokeName").value = "";
+
+
 });
